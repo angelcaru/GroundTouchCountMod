@@ -1,4 +1,4 @@
-﻿- Name: DashCountMod
+﻿- Name: GroundTouchCountMod
   Version: 0.6.1
   DLL: bin/Release/net452/DashCountMod.dll
   Dependencies:
