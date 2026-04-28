@@ -19,6 +19,7 @@ namespace Celeste.Mod.DashCountMod {
         public override void Load() {
             CustomDashCounting.Load();
             CustomJumpCounting.Load();
+            CustomGroundTouchCounting.Load();
             DashCountJournalPage.Load();
             JumpCountJournalPage.Load();
             DashCountInChapterPanel.Instance.Load();
@@ -28,6 +29,7 @@ namespace Celeste.Mod.DashCountMod {
         public override void Unload() {
             CustomDashCounting.Unload();
             CustomJumpCounting.Unload();
+            CustomGroundTouchCounting.Unload();
             DashCountJournalPage.Unload();
             JumpCountJournalPage.Unload();
             DashCountInChapterPanel.Instance.Unload();

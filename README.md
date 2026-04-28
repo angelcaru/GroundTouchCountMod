@@ -1,3 +1,10 @@
+# Ground Touch Count Mod
+This is a fork of https://github.com/maddie480/DashCountMod that adds a ground touch counter. **SINCE THIS IS A FORK, MAKE SURE TO DISABLE THE ORIGINAL MOD IF YOU HAVE IT**
+
+Original README below
+
+<hr>
+
 # Dash & Jump Count Mod
 
 This mod adds **dash and jump counters** to the game. You can configure whether to show those in **Mod Options**:

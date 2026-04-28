@@ -8,6 +8,7 @@
         private ShowCountInGameOptions showDashCountInGame = ShowCountInGameOptions.None;
         private CountOptionsInChapterPanel jumpCountInChapterPanel = CountOptionsInChapterPanel.None;
         private ShowCountInGameOptions showJumpCountInGame = ShowCountInGameOptions.None;
+        private ShowCountInGameOptions showGroundTouchCountInGame = ShowCountInGameOptions.None;
         private bool countDreamDashRedirectsAsDashes = false;
         private bool doNotResetDashCountOnDeath = false;
 
@@ -48,6 +49,14 @@
             set {
                 showJumpCountInGame = value;
                 Features.DisplayJumpCountInLevel.SetValue(value);
+            }
+        }
+
+        public ShowCountInGameOptions GroundTouchCountInGame {
+            get { return showGroundTouchCountInGame; }
+            set {
+                showGroundTouchCountInGame = value;
+                Features.DisplayGroundTouchCountInLevel.SetValue(value);
             }
         }
 
