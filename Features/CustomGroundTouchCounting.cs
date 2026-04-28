@@ -51,13 +51,14 @@ namespace Celeste.Mod.DashCountMod.Features {
         }
 
         private static void onPlayerUpdate(On.Celeste.Player.orig_Update orig, Player self) {
+            orig(self);
+
             if (self.InControl) ModSession.Introing = false;
             bool onGround = (bool)self.GetType().GetField("onGround", BindingFlags.NonPublic | BindingFlags.Instance).GetValue(self) && !ModSession.Introing;
             if (!ModSession.WasGrounded && onGround) {
                 AddTouch(self);
             }
             ModSession.WasGrounded = onGround;
-            orig(self);
         }
 
         private static void onSaveDataRegisterCompletion(On.Celeste.SaveData.orig_RegisterCompletion orig, SaveData self, Session session) {
