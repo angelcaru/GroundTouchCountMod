@@ -6,6 +6,6 @@
         public int GroundTouchCount { get; set; } = 0;
         //[YamlIgnore]
         public bool Introing { get; set; } = true;
-        public bool WasGrounded { get; set; } = true;
+        public bool WasGrounded { get; set; } = false;
     }
 }
